@@ -1,0 +1,558 @@
+body{
+    font: "Poppins", sans-serif;
+}
+pre {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+.highcharts-root {
+    font-family: "Poppins", sans-serif !important;
+}
+.highcharts-subtitle {
+    font-family: "Poppins", sans-serif !important;
+}
+.form-check{
+    margin-bottom: 0;
+}
+.align-items-center{
+    align-items: center;
+}
+.loadding {
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 30%);
+    /* position: fixed; */
+    z-index: 999;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #009D85;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+.icon-svg {
+    border-radius: 0.75rem;   
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sidebar-nav .nav-link .icon-svg {
+    background: #fff;
+}
+.sidebar-nav .nav-link.collapsed .icon-svg{
+    background: #009D85;
+}
+.sidebar-nav .nav-link .icon-svg svg {
+    fill: #009D85;
+    width: 20px;
+    height: 20px;
+}
+.sidebar-nav .nav-link.collapsed .icon-svg svg{
+    fill: #fff;    
+    width: 20px;
+    height: 20px;
+}
+i.bi.bi-list.toggle-sidebar-btn {
+    font-size: 28px;
+    color: #fff;
+}
+.Current-Pendency .col .card .card-body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.Current-Pendency .col .card .card-body img{
+width: 60px;
+}
+.Current-Pendency .col .card .card-body p{
+    color: #7A7A7A;
+text-align: center;
+/* font-family: Poppins; */
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+margin: 5px 0;
+}
+.Current-Pendency .col .card .card-body h3{
+    color: var(--Gray-Gray-700, #2D3748);
+    text-align: center;
+    /* font-family: Poppins; */
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 0px;
+}
+text.highcharts-title {
+    color: #127D40 !important;
+    fill: #127D40 !important;
+}
+text.highcharts-credits {
+    display: none;
+}
+text.highcharts-subtitle {
+    color: var(--Gray-Gray-700, #2D3748) !important;
+    text-align: center;
+    /* font-family: Poppins; */
+    font-size: 1rem !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140% !important;
+}
+.table .thead-dark tr th{
+    background: #356384;
+    color: #fff;
+    /* font-family: Poppins; */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    vertical-align: middle;
+    height: 54px;
+}
+.table tr td{
+    color: #5C5858;
+/* font-family: Poppins; */
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+vertical-align: middle;
+padding: 15px 10px;
+}
+.table tr th{
+    vertical-align: middle;
+}
+.table tr td button{
+    font-size: 0.875rem;
+}
+.Case_Institute{
+    list-style: none;
+}
+.Case_Institute_1{
+    list-style: none;
+}
+.Case_Institute_1 li{
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+}
+.Case_Institute li{
+   float: left;
+   width: 20%;
+   margin-top: 20px;
+}
+.Case_Institute_1 li h3{
+    color: #747474;
+/* font-family: Poppins; */
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Case_Institute_1 li p{
+    color: #5976C1;
+/* font-family: Poppins; */
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 0;
+    margin: 0;
+}
+.Case_Institute li h3{
+    color: #747474;
+/* font-family: Poppins; */
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Case_Institute li p{
+    color: #5976C1;
+/* font-family: Poppins; */
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 0;
+    margin: 0;
+}
+.Court_info .title{
+    color: #333;
+/* font-family: Poppins; */
+font-size: 1.625rem;
+font-style: normal;
+font-weight: 500;
+line-height: 140%;
+border-bottom: 1px solid #a8a8a8;
+padding-bottom: 10px;
+
+}
+.SCP label{
+    color: #747474;
+/* font-family: Poppins; */
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Bench_info{
+    border-radius: 0.25rem;
+background: #F5F6F7;
+padding: 20px;
+margin-bottom: 20px;
+}
+.Bench_info h3{
+    color: #333;
+/* font-family: Poppins; */
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Bench_info p{
+    color: #435EA4;
+    /* font-family: Poppins; */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.Bench_info h4{
+    color: #333;
+/* font-family: Poppins; */
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Bench_info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Bench_info ul li{
+    color: #435EA4;
+    /* font-family: Poppins; */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem;
+}
+h3.title {
+    color: #333;
+    /* font-family: Poppins; */
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+.text-right{
+    text-align: right;
+}
+select.form-control{
+    -webkit-appearance: menulist!important;
+    -moz-appearance: menulist!important;
+    -ms-appearance: menulist!important;
+    -o-appearance: menulist!important;
+    appearance: menulist!important;
+}
+.modal-body h3{
+    color: #28509F;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.modal-body p{
+    color: #444242;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@media (max-width: 768px) {
+    .Case_Institute li {
+        width: 50%;     
+    }
+    .Case_Institute_1 li {
+        width: 50%;
+    }
+    .Court_info .title{
+        font-size: 1rem;
+    }
+    .pagetitle h5{
+        font-size: 1.5rem;
+    }
+    .pagetitle {
+        min-height: 185px;
+    }
+}
+.select2-container--default .select2-selection--single{
+    height: 37.6px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 37px !important;
+}
+
+.loader-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  } */
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+  @font-face {
+    font-family: nafees nastaleeq;
+    src: url('../styles/fonts/nafees-nastaleeq.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: mBILALmNastaleeq;
+    src: url('../styles/fonts/mehr-nastaliq.ttf') format('truetype');
+  }
+  
+  
+  .urdu-font{
+      font-size:16px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-12{
+      font-size:12px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-13{
+      font-size:13px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-14{
+      font-size:14px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-15{
+      font-size:15px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-16{
+      font-size:16px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-17{
+      font-size:17px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-18{
+      font-size:18px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-19{
+      font-size:19px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-20{
+      font-size:20px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-22{
+      font-size:22px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-24{
+      font-size:24px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-26{
+      font-size:26px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-28{
+      font-size:28px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-30{
+      font-size:30px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-34{
+      font-size:34px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+  
+  .urdu-font-36{
+      font-size:36px;
+      font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+      direction: rtl;
+      line-height: 100% !important;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ced4da; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aab7cf transparent; 
+  }
+
+input[type="date"] {
+    position: relative;
+    height: 38px;
+}
+input[type="date"]:before {
+    position: absolute;
+    top: 5px; 
+    left: 15px;
+    content: attr(data-date);
+    display: inline-block;
+    color: black;
+}
+
+input[type="date"]::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    color: black;
+    opacity: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 35px;
+    width: calc(100% - 329px);
+    z-index: 99;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
+
+.table-fixed td {
+    text-overflow: ellipsis;
+    overflow: auto;
+}
+
+.rule-table tr td {
+    padding: 0;
+}

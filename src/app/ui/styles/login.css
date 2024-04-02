@@ -1,0 +1,52 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #EAECEE;
+    color: #3F3F3F;
+  }
+  .wb-white{
+    background: #fff;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    height: 60px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3F3F3F;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    border: 2px solid #B3B3B3;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary{
+        background-color: #009D85;
+        border-color: #009D85;
+        height: 60px;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+}
+.Forgot a{
+    color: #7980C0;
+font-family: Poppins;
+font-size: 0.8125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:first-child:active{
+    background-color: #017c69;
+    border-color: #017c69;
+}
+@media (max-width: 1199px) {
+  .login-bg-main{
+    display: none;
+  }
+}
